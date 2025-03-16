@@ -1,5 +1,5 @@
 import { Inngest } from "inngest";
-import connectDB from "./db";
+import connectDB from "./db.js";
 import User from "@/models/User";
 
 // Create a client to send and receive events
@@ -30,7 +30,7 @@ export const syncUserCreation = inngest.createFunction(
 
 
 // inngest function to update user data in a database
-export const syncUserUpdate = inngest.createFunction(
+export const syncUserUpdation = inngest.createFunction(
     {
         id:"sync-user-update-from-clerk",
     },
