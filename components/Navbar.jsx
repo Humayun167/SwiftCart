@@ -14,12 +14,19 @@ const Navbar = () => {
 
   return (
     <nav className="flex items-center justify-between px-6 md:px-16 lg:px-32 py-3 border-b border-gray-300 text-gray-700">
-      <Image
+      <button class=" gap-2 px-6 py-3 text-lg font-bold   transition">
+  <span class=" text-red-600 ">
+    S
+  </span>
+  wiftCart
+</button>
+
+      {/* <Image
         className="cursor-pointer w-28 md:w-32"
         onClick={() => router.push('/')}
         src={assets.logo}
         alt="logo"
-      />
+      /> */}
       <div className="flex items-center gap-4 lg:gap-8 max-md:hidden">
         <Link href="/" className="hover:text-gray-900 transition">
           Home
